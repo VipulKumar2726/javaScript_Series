@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#grey {
+    background-color: grey;
+}
+
+#white {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
