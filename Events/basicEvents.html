@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: grey; color: aliceblue;">
+    <div>
+        <h3>Amazong Image</h3>
+        <ul id="images">
+            <li><img width="200px" id="cat" src="https://cdn.pixabay.com/photo/2024/05/15/00/57/kitten-8762396_640.png" alt=""></li>
+            <li><img width="200px" id="flower" src="https://cdn.pixabay.com/photo/2017/06/11/21/38/flowers-2393618_640.png" alt=""></li>
+            <li><img width="200px" id="lion" src="https://cdn.pixabay.com/photo/2024/03/21/23/06/created-by-ai-8648630_640.png" alt=""></li>
+            <li><img width="200px" id="fish" src="https://cdn.pixabay.com/photo/2017/09/02/22/10/dolphin-2708695_640.png" alt=""></li>
+
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+
+    <script>
+
+//  document.getElementById('lion').onclick = function () {
+//     alert("lion Clicked")
+//  }
+
+
+//type, timeStamp , defaultPrevented
+//target , toElement , srcEelement, currentTarget,
+//clientX, clientY, ScrenX, screenY
+// altkey, ctrlkey, shiftkey, keyCode
+
+
+// document.getElementById("images").addEventListener('click', function(e) {
+//     console.log("clicked inside the ul")
+// }, false)
+
+// document.getElementById("lion").addEventListener('click', function(e) {
+//     // alert("lion clicked again")
+//     console.log("lion clicked")
+//     e.stopPropagation()
+// }, false)
+
+// document.getElementById('google').addEventListener('click', function(e) {
+//     e.preventDefault()
+// e.stopPropagation()
+//     console.log("google clicked");
+    
+// }, false)
+document.querySelector('#images').addEventListener('click', function(e) {
+    console.log(e.target.tagName)
+    if (e.target.tagName === 'IMG') {
+        let removeIt = e.target.parentNode
+        removeIt.remove() 
+    }
+
+
+}, false)
+
+// removeIt.parentNode.removeChild(removeIt)
+
+
+
+    </script>
+</body>
+</html>
